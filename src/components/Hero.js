@@ -1,8 +1,8 @@
-import React from "react"
-import Image from "gatsby-image"
-import { Link } from "gatsby"
-import { graphql, useStaticQuery } from "gatsby"
-import SocialLinks from "../constants/socialLinks"
+import React from "react";
+import Image from "gatsby-image";
+import { Link } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
+import SocialLinks from "../constants/socialLinks";
 // ...GatsbyImageSharpFluid
 
 const query = graphql`
@@ -39,4 +39,4 @@ const Hero = () => {
   </header>
 }
 
-export default Hero
+export default Hero;

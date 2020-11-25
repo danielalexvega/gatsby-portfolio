@@ -1,6 +1,6 @@
-import React from "react"
-import Title from "./Title"
-import services from "../constants/services"
+import React from "react";
+import Title from "./Title";
+import services from "../constants/services";
 const Services = () => {
   return <section className="section bg-grey">
     <Title title="services" />
@@ -20,4 +20,4 @@ const Services = () => {
   </section>
 }
 
-export default Services
+export default Services;
