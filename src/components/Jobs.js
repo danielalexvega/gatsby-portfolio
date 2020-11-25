@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import Title from "./Title"
-import { FaAngleDoubleRight } from "react-icons/fa"
+import { FaAlignRight, FaAngleDoubleRight } from "react-icons/fa"
 import { graphql, useStaticQuery } from "gatsby"
 import { Link } from "gatsby"
 
@@ -32,6 +32,7 @@ const Jobs = () => {
   return <section className="section jobs">
     <Title title="experience" />
     <div className="jobs-center">
+      {/* btns container */}
       <div className="btn-container">
         {jobs.map((job, index) => {
           return (
@@ -43,8 +44,23 @@ const Jobs = () => {
             </button>)
         })}
       </div>
+      <article className="job">
+        <h3>{position}</h3>
+        <h4>{company}</h4>
+        <p className="job-date">{date}</p>
+        {
+          desc.map((item) => {
+            return <div key={item.id} className="job-desc">
+              <FaAngleDoubleRight className="job-icon"></FaAngleDoubleRight>
+              <p>{item.name}</p>
+            </div>
+          })
+        }
+      </article>
     </div>
-
+    <Link to="/about" className="btn center-btn">
+      More Info
+    </Link>
   </section>
 }
 
