@@ -6,12 +6,12 @@
 
 module.exports = {
   siteMetadata: {
-    title: "WebDev Portfolio",
-    description: "This is WebDev Portfolio Site",
-    author: "@webdev",
-    twitterUsername: "@john_smilga",
+    title: "Daniel Vega Portfolio",
+    description: "This is the portfolio site for Daniel Vega. ",
+    author: "Daniel Vega",
+    twitterUsername: "@zlamdanielvega",
     image: "/twitter-img.png",
-    siteUrl: "https://testing-strapi-gatsby-build.netlify.app",
+    siteUrl: "https://danielvegaportfolio.netlify.app",
   },
   plugins: [
     `gatsby-transformer-sharp`,
@@ -34,19 +34,5 @@ module.exports = {
         singleTypes: ['about-me'],
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-prefetch-google-fonts`,
-    //   options: {
-    //     fonts: [
-    //       {
-    //         family: `Roboto`,
-    //         variants: [`400`, `700`],
-    //       },
-    //       {
-    //         family: `Open Sans`,
-    //       },
-    //     ],
-    //   },
-    // },
   ],
 }

@@ -1,11 +1,12 @@
-import React from "react"
-import { graphql } from "gatsby"
-import Layout from "../components/Layout"
-import Hero from "../components/Hero"
-import Services from "../components/Services"
-import Jobs from "../components/Jobs"
-import Projects from "../components/Projects"
-import Blogs from "../components/Blogs"
+import React from "react";
+import { graphql } from "gatsby";
+import Layout from "../components/Layout";
+import Hero from "../components/Hero";
+import Services from "../components/Services";
+import Jobs from "../components/Jobs";
+import Projects from "../components/Projects";
+import Blogs from "../components/Blogs";
+import SEO from "../components/SEO";
 
 export default ({ data }) => {
   const {
@@ -14,6 +15,7 @@ export default ({ data }) => {
   } = data;
 
   return <Layout>
+    <SEO title="Home" description="This is our home page." />
     <Hero />
     <Services />
     <Jobs />
