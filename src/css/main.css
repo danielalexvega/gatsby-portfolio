@@ -415,7 +415,7 @@ Hero
 }
 
 .hero-center {
-  height: 100%;
+  height: 85%;
   display: grid;
   align-items: center;
 }
@@ -933,7 +933,7 @@ About Page
   .about-center {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    align-items: center;
+    /* align-items: center; */
     column-gap: 4rem;
   }
   .about-img {

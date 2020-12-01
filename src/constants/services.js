@@ -1,22 +1,22 @@
 import React from "react"
-import { FaCode, FaSketch, FaAndroid } from "react-icons/fa"
+import { FaNodeJs, FaJs, FaPizzaSlice } from "react-icons/fa"
 export default [
   {
     id: 1,
-    icon: <FaCode className="service-icon" />,
-    title: "web development",
-    text: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`,
+    icon: <FaJs className="service-icon" />,
+    title: "Frontend Development",
+    text: `React, Gatsby, or plain vanilla JavaScript. Throw in some Bootstrap, or Semantic UI, or some other CSS framework. I love the challenges of frontend development.`,
   },
   {
     id: 2,
-    icon: <FaSketch className="service-icon" />,
-    title: "web design",
-    text: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`,
+    icon: <FaNodeJs className="service-icon" />,
+    title: "Backend Development",
+    text: `GraphQL, MySQL, PostgreSQL, or some other query language, and Node.js with Express. There are many ways to tackle backend development. `,
   },
   {
     id: 3,
-    icon: <FaAndroid className="service-icon" />,
-    title: "app design",
-    text: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`,
+    icon: <FaPizzaSlice className="service-icon" />,
+    title: "Fullstack Development",
+    text: `Put it all together; approaching a problem from all angles, it's a supreme pizza. All the ingrediants, including pineapple.`,
   },
 ]
