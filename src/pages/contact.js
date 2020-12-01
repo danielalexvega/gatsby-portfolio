@@ -1,8 +1,11 @@
-import React from "react"
-import Layout from "../components/Layout"
+import React from "react";
+import Layout from "../components/Layout";
+import SEO from "../components/SEO";
 
 const contact = () => {
   return <Layout>
+    <SEO title="Contact"
+      description="Get in touch with Daniel Vega. He's desparate for human contact." />
     <section className="contact-page">
       <article className="contact-form">
         <h3>Hit me up</h3>
@@ -24,4 +27,4 @@ const contact = () => {
   </Layout>
 }
 
-export default contact
+export default contact;

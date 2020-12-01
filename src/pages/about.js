@@ -1,14 +1,16 @@
-import React from "react"
-import Layout from "../components/Layout"
-import { graphql } from "gatsby"
-import Title from "../components/Title"
-import Image from "gatsby-image"
+import React from "react";
+import Layout from "../components/Layout";
+import { graphql } from "gatsby";
+import Title from "../components/Title";
+import Image from "gatsby-image";
+import SEO from "../components/SEO";
 
 const About = ({ data: { about: { nodes } } }) => {
   console.log(nodes);
   const { infoParagraph, tech, title, image } = nodes[0];
 
   return <Layout>
+    <SEO title="About" description="About Daniel Vega, an overall cool dude." />
     <section className="about-page">
       <div className="section-center about-center">
         <Image fluid={image.childImageSharp.fluid} className="about-img" />
