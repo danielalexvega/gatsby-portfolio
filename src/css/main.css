@@ -415,7 +415,7 @@ Hero
 }
 
 .hero-center {
-  height: 85%;
+  height: 100%;
   display: grid;
   align-items: center;
 }
